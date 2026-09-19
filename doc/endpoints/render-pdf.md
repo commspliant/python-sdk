@@ -42,9 +42,8 @@ Same auth rules as `POST /api/v1/render/html`.
 ## SDK example
 
 ```python
-from commspliant import Client  # TODO: replace with real SDK import once published
+from commspliant import Client
 
-# TODO: replace with real SDK call once published
 client = Client("ck_YOUR_API_KEY")
 
 result = client.render_pdf(

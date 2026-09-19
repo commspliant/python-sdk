@@ -44,9 +44,8 @@ Resolves an **approved** template version and returns rendered HTML as a streame
 ## SDK example
 
 ```python
-from commspliant import Client  # TODO: replace with real SDK import once published
+from commspliant import Client
 
-# TODO: replace with real SDK call once published
 client = Client("ck_YOUR_API_KEY")
 
 result = client.render_html(
