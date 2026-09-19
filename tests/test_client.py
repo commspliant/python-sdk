@@ -86,7 +86,6 @@ class ClientTest(unittest.TestCase):
                 "/api/v1/render/error",
                 template_id="550e8400-e29b-41d4-a716-446655440000",
                 variables={},
-                template_version_id=None,
             )
         self.assertEqual(ctx.exception.status_code, 404)
         self.assertEqual(ctx.exception.message, "template not found")

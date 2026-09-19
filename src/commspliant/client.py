@@ -40,13 +40,11 @@ class Client:
         *,
         template_id: str,
         variables: Mapping[str, Any],
-        template_version_id: Optional[str] = None,
     ) -> RenderResult:
         return self._post_render(
             "/api/v1/render/html",
             template_id=template_id,
             variables=variables,
-            template_version_id=template_version_id,
         )
 
     def render_pdf(
@@ -54,13 +52,11 @@ class Client:
         *,
         template_id: str,
         variables: Mapping[str, Any],
-        template_version_id: Optional[str] = None,
     ) -> RenderResult:
         return self._post_render(
             "/api/v1/render/pdf",
             template_id=template_id,
             variables=variables,
-            template_version_id=template_version_id,
         )
 
     def _post_render(
@@ -69,7 +65,6 @@ class Client:
         *,
         template_id: str,
         variables: Mapping[str, Any],
-        template_version_id: Optional[str],
     ) -> RenderResult:
         if not template_id or not template_id.strip():
             raise ValueError("template_id is required")
@@ -80,8 +75,6 @@ class Client:
             "templateId": template_id,
             "variables": dict(variables),
         }
-        if template_version_id:
-            payload["templateVersionId"] = template_version_id
 
         headers = {"Content-Type": "application/json"}
         if self._use_bearer_auth:
