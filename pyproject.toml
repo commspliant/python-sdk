@@ -8,7 +8,26 @@ version = "0.1.0"
 description = "Official CommsPliant Customer Integration API SDK for Python"
 readme = "README.md"
 requires-python = ">=3.9"
-license = { text = "MIT" }
+license = "MIT"
+authors = [
+  { name = "CommsPliant" }
+]
+keywords = ["commspliant", "api", "sdk", "templates", "rendering"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://developer.commspliant.com/"
+Repository = "https://github.com/commspliant/python-sdk"
+Issues = "https://github.com/commspliant/python-sdk/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0"]

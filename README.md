@@ -7,10 +7,10 @@ Requires Python 3.9 or later.
 ## Installation
 
 ```bash
-pip install -e .
+pip install commspliant
 ```
 
-Or clone this repository and install from the local path.
+To work on the SDK itself, clone this repository and run `pip install -e ".[dev]"`.
 
 ## Quickstart
 
@@ -55,5 +55,6 @@ Endpoint guides and SDK usage examples: [doc/README.md](doc/README.md)
 
 ## Links
 
+- [PyPI package](https://pypi.org/project/commspliant/)
 - [Developer Portal](https://developer.commspliant.com/)
 - [About CommsPliant](https://commspliant.com/)
